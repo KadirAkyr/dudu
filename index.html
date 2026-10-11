@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faedf0">
+    <title>Pour Dudu</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <audio id="background-music" src="audios/Doja%20Cat%20-%20Kiss%20Me%20More%20(Lyrics)%20ft.%20SZA.mp3" loop preload="metadata"></audio>
+    <button id="music-toggle" type="button" aria-label="Activer la musique" aria-pressed="false">♫ Activer la musique</button>
+    <main id="welcome">
+      <h1 class="welcome-title">Bonjour, ce site a été fait par un ingénieur informaticien diplômé d'un master 2 incompétent</h1>
+      <div class="photos welcome-photo" id="welcome-photo" hidden>
+        <img id="p0" alt="Photo d’accueil">
+      </div>
+      <div class="go-slot"><button id="go" type="button">Go</button></div>
+    </main>
+    <main id="first-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="moment-title">Dudu Celayir et ses choses préférées: </h1>
+      <div class="photos" aria-label="Photo de Dudu">
+        <img src="pics/pDudu.jpeg" alt="Dudu" width="1290" height="1588">
+      </div>
+      <button id="next-moment" type="button">Suivant</button>
+    </main>
+    <main id="niyazi-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="niyazi-title">Son merveilleux mari, Niyazi Celayir, qui la fait toujours rire, mais dont il vaut mieux éviter sa colère (sinon, il risque de vous écraser avec sa voiture, il l'a fait pour moins que ça)</h1>
+      <div class="photos" aria-label="Photos de Niyazi">
+        <img src="pics/p1.jpeg" alt="Première photo de Niyazi" width="1290" height="1595">
+        <img src="pics/p1bis.jpeg" alt="Deuxième photo de Niyazi" width="1290" height="1597">
+      </div>
+      <button id="next-hilmi" type="button">Suivant</button>
+    </main>
+    <main id="hilmi-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="hilmi-title">Hilmi Celayir, son premier fils, la prunelle de ses yeux, qui malheureusement ne met ses talents d'informaticien au service de sa maman. Elle serait encore plus heureuse s'il jouait un peu moins à la Playstation</h1>
+      <div class="photos" aria-label="Photo de Hilmi">
+        <img src="pics/p2.jpeg" alt="Hilmi" width="992" height="2048">
+      </div>
+      <button id="next-yelda" type="button">Suivant</button>
+    </main>
+    <main id="yelda-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="yelda-title">Yelda Celayir, encore pire que sa maman ! La version Pro Max de Dudu Celayir. Très franche, elle dit tout ce qui lui passe par la tête, sans aucun filtre. Tout le monde ferait mieux de faire attention à elle ! Et surtout, c’est une grande fan du PSG ! </h1>
+      <div class="photos" aria-label="Photo de Yelda">
+        <img src="pics/p3.jpeg" alt="Yelda" width="1290" height="1583">
+      </div>
+      <button id="next-ismail" type="button">Suivant</button>
+    </main>
+    <main id="ismail-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="ismail-title"> Ismail Celayir, le plus beau, le plus intelligent, le polytechnicien !!!! </h1>
+      <div class="photos" aria-label="Photo de Ismail">
+        <img src="pics/p4.jpeg" alt="Ismail" width="1290" height="1580">
+      </div>
+      <button id="next-family" type="button">Suivant</button>
+    </main>
+    <main id="family-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="family-title"> La famille Celayir au grand complet... Enfin presque ! Mais qui manque à l'appel ...?</h1>
+      <div class="photos" aria-label="Photo de la famille Celayir">
+        <img src="pics/p5.jpeg" alt="La famille Celayir" width="1290" height="1596">
+      </div>
+      <button id="next-laya" type="button">Suivant</button>
+    </main>
+    <main id="laya-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="laya-title"> Laya Celayir, officiellement le chat la plus chanceuse de la planète ! Franchement, on a tous raté notre vie : il fallait naître chat chez Dudu Celayir ! 👑 Princesse, reine, propriétaire des lieux… les humains sont juste là pour payer les factures et la servir. Un collier Hermès bientôt.</h1>
+      <div class="photos" aria-label="Photo de Laya">
+        <img src="pics/p6.jpeg" alt="Laya" width="1200" height="1600">
+      </div>
+      <button id="next-sayani" type="button">Suivant</button>
+    </main>
+    <main id="sayani-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="sayani-title">Sayani: le bras droit de Dudu</h1>
+      <div class="photos" aria-label="Photo de Sayani">
+        <img src="pics/pSayani.jpeg" alt="Sayani" width="1290" height="1450">
+      </div>
+      <button id="next-mention" type="button">Suivant</button>
+    </main>
+    <main id="mention-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="mention-title">ses enfants adoptifs</h1>
+      <div class="photos" aria-label="Photo de ses enfants adoptifs">
+        <img src="pics/pmention.jpeg" alt="Ses enfants adoptifs" width="1200" height="1600">
+      </div>
+      <button id="next-plok" type="button">Suivant</button>
+    </main>
+    <main id="plok-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="plok-title">le chat avec lequel on a amadoué Dudu pour adopter un chat</h1>
+      <div class="photos" aria-label="Photo du chat">
+        <img src="pics/plok.jpeg" alt="Le chat avec lequel on a amadoué Dudu" width="1200" height="1600">
+      </div>
+      <button id="next-finale" type="button">Suivant</button>
+    </main>
+    <main id="finale-moment" hidden>
+      <h1 class="story-title" tabindex="-1" id="finale-title">Fin.</h1>
+      <div class="photos" aria-label="Photo de fin">
+        <img src="pics/pFin.jpeg" alt="Photo de fin" width="1290" height="1588">
+      </div>
+    </main>
+    <div id="stage-darkness" aria-hidden="true"></div>
+    <div id="ninho-surprise" hidden>
+      <img src="pics/pninho.jpeg" alt="Ninho">
+    </div>
+    <dialog id="kadir-dialog" aria-labelledby="kadir-title">
+      <form id="kadir-form">
+        <h2 id="kadir-title">Si tu veux continuer tu dois dire que Kadir est intelligent</h2>
+        <label for="kadir-answer">Tape exactement : Kadir est intelligent</label>
+        <input id="kadir-answer" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" autofocus>
+        <button id="next" type="submit" disabled>Suivant</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
